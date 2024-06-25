@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.TextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" style="-fx-background-color: #f6e7d8;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fitfun.SubsecribeController">
+   <children>
+      <VBox layoutY="25.0" prefHeight="200.0" prefWidth="100.0" style="-fx-spacing: 10;">
+         <children>
+            <VBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="39.0" style="-fx-spacing: 5;">
+               <children>
+                  <Line endX="-8.041820526123047" endY="-23.583528518676758" startX="-43.920501708984375" startY="-23.583534240722656" stroke="#e9bb15" strokeWidth="4.0" />
+                  <Line endX="-8.041820526123047" endY="-23.583528518676758" startX="-43.920501708984375" startY="-23.371519088745117" stroke="#8d5f03" strokeWidth="4.0" />
+                  <Line endX="-8.041820526123047" endY="-23.583528518676758" startX="-43.920501708984375" startY="-23.583534240722656" stroke="#4e3a01" strokeWidth="4.0" />
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </VBox>
+            <Text fill="#5c3d0b" strokeType="OUTSIDE" strokeWidth="0.0" text="FITFUN" wrappingWidth="134.91200065612793">
+               <font>
+                  <Font name="Barlow Condensed ExtraBold" size="48.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </Text>
+            <Text fill="#5c3d0b" strokeType="OUTSIDE" strokeWidth="0.0" text="Subscribe to a childcare">
+               <font>
+                  <Font name="Eras Bold ITC" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </Text>
+            <HBox prefHeight="268.0" prefWidth="301.0" style="-fx-spacing: 50;">
+               <children>
+                  <VBox prefHeight="268.0" prefWidth="128.0" style="-fx-spacing: 35;">
+                     <children>
+                        <Text fill="#5c3d0b" strokeType="OUTSIDE" strokeWidth="0.0" text="first name:  " wrappingWidth="114.20703125">
+                           <font>
+                              <Font name="Eras Bold ITC" size="18.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#5c3d0b" strokeType="OUTSIDE" strokeWidth="0.0" text="last name:  ">
+                           <font>
+                              <Font name="Eras Bold ITC" size="18.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#5c3d0b" strokeType="OUTSIDE" strokeWidth="0.0" text="age:  ">
+                           <font>
+                              <Font name="Eras Bold ITC" size="18.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#5c3d0b" strokeType="OUTSIDE" strokeWidth="0.0" text="health status:  ">
+                           <font>
+                              <Font name="Eras Bold ITC" size="18.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#5c3d0b" strokeType="OUTSIDE" strokeWidth="0.0" text="date:   ">
+                           <font>
+                              <Font name="Eras Bold ITC" size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" top="10.0" />
+                     </padding>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="125.0" style="-fx-spacing: 30;">
+                     <children>
+                        <TextField fx:id="FName" style="-fx-background-radius: 10;" />
+                        <TextField fx:id="LName" style="-fx-background-radius: 10;" />
+                        <TextField fx:id="age" style="-fx-background-radius: 10;" />
+                        <TextField fx:id="healthStatus" style="-fx-background-radius: 10;" />
+                        <DatePicker fx:id="date" onAction="#dateAction" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <StackPane prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="84.0" fitWidth="335.0">
+                     <image>
+                        <Image url="C:\Users\ACER\Downloads\fitfunImage.png" />
+                     </image>
+                  </ImageView>
+                  <VBox alignment="CENTER" prefHeight="121.0" prefWidth="335.0" style="-fx-spacing: 5; -fx-padding: 10;">
+                     <children>
+                        <Button fx:id="display" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#displayInfo" prefHeight="75.0" prefWidth="135.0" style="-fx-background-color: #ac6513; -fx-background-radius: 20;" text="Display information" textFill="#fdf8f8">
+                           <font>
+                              <Font name="Felix Titling" size="24.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="back" mnemonicParsing="false" onAction="#backAction" prefHeight="75.0" prefWidth="135.0" style="-fx-background-color: #ac6513; -fx-background-radius: 20;" text="Another registration" textFill="#fdf8f8">
+                           <font>
+                              <Font name="Felix Titling" size="24.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </VBox>
+               </children>
+            </StackPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
